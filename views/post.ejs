@@ -17,6 +17,15 @@
             <span class="meta">Posted by
               <a href="#">Start Bootstrap</a>
               <%= post.dateCreated %> </span>
+              <div class="tm-bg-white tm-share-box">
+              <div class="text-right">
+                <a href="/posts/edit/<%= post._id %>" class="btn btn-danger p-3 mt-5 tm-btn-animate tm-btn-download tm-icon-download"><span>Update Post</span></a>
+              </div>
+              <div class="text-right">
+                <a href="/posts/<%= post._id %>?_method=DELETE" class="btn btn-danger p-3 mt-2 tm-btn-animate tm-btn-download tm-icon-download"
+                onclick="return confirm('ARE YOU SURE?')"><span>Delete Post</span></a>	
+              </div>
+            </div>
           </div>
         </div>
       </div>
